@@ -7,8 +7,13 @@ This is a test project for the company Arnaldo Castro
 * Nodejs 8 or newer 
 * Yarn 
 
+## Download or clone
+
+* Run `git clone https://github.com/juliocesarcsc/marvel-test.git` command 
+
 ## Install dependencies
 
+* Run `cd marvel-test` command 
 * Run `yarn install` command 
 
 ## Development server
