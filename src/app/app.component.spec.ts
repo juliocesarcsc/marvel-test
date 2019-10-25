@@ -50,4 +50,32 @@ describe('AppComponent', () => {
     expect(comp.alertClass).toBe('info');
     expect(comp.showAlert).toBeTruthy();
   }));
+
+  it(`should set alertMsg to 'Service offline' on handle error status 0`, async(() => {
+    comp.handleError(new HttpErrorResponse({status: 0}));
+    expect(comp.alertText).toBe('Service offline');
+    expect(comp.alertClass).toBe('danger');
+    expect(comp.showAlert).toBeTruthy();
+  }));
+
+  it(`should set alertMsg to error status value on handle api error`, async(() => {
+    comp.handleError(new HttpErrorResponse({status: 404, error: {status: 'We couldn\'t find that character'}}));
+    expect(comp.alertText).toBe('We couldn\'t find that character');
+    expect(comp.alertClass).toBe('danger');
+    expect(comp.showAlert).toBeTruthy();
+  }));
+
+  it(`should set alertMsg to error message value on handle api error`, async(() => {
+    comp.handleError(new HttpErrorResponse({status: 401, error: {message: 'Invalid credentials'}}));
+    expect(comp.alertText).toBe('Invalid credentials');
+    expect(comp.alertClass).toBe('danger');
+    expect(comp.showAlert).toBeTruthy();
+  }));
+
+  it(`should set alertMsg to 'An unexpected error occurred.' on handle unknow error`, async(() => {
+    comp.handleError(new HttpErrorResponse({status: 500}));
+    expect(comp.alertText).toBe('An unexpected error occurred.');
+    expect(comp.alertClass).toBe('danger');
+    expect(comp.showAlert).toBeTruthy();
+  }));
 });
