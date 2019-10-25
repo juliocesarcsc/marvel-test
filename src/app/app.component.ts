@@ -49,7 +49,7 @@ export class AppComponent {
     }
   }
 
-  private findHero(characterId) {
+  findHero(characterId) {
     if (!characterId) {
       this.showMsg('ID can\'t be null.');
       return;
