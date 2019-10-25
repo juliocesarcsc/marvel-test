@@ -1,5 +1,5 @@
 {
-  "name": "angular-unit-testing",
+  "name": "marbel-test",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
