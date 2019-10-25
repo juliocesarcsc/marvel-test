@@ -36,4 +36,18 @@ describe('AppComponent', () => {
     const compiled = fixture.debugElement.nativeElement;
     expect(compiled.querySelector('header > h1').textContent).toContain('Find Hero by ID');
   }));
+
+  it(`should set alertText to 'someText'`, async(() => {
+    comp.showMsg('someText');
+    expect(comp.alertText).toBe('someText');
+    expect(comp.alertClass).toBe('danger');
+    expect(comp.showAlert).toBeTruthy();
+  }));
+
+  it(`should set alertClass to 'info'`, async(() => {
+    comp.showMsg('someText', false);
+    expect(comp.alertText).toBe('someText');
+    expect(comp.alertClass).toBe('info');
+    expect(comp.showAlert).toBeTruthy();
+  }));
 });
