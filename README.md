@@ -18,7 +18,7 @@ This is a test project for the company Arnaldo Castro
 
 ## Development server
 
-* Run `ng serve` for a dev server. 
+* Run `npm start` for a dev server. 
 * Navigate to `http://localhost:4200/`.
 
 ## Build and deployment
