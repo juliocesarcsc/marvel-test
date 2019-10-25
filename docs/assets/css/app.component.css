@@ -1,0 +1,47 @@
+.content-wrap {
+  background-color: whitesmoke;
+  min-height: 320px;
+  padding: 10px;
+}
+
+#hero-form {
+  list-style: none;
+}
+
+header > h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font: 800 33px/1 "RobotoCondensed", "Trebuchet MS", Helvetica, Arial, sans-serif;
+}
+
+
+.content {
+  display: inline-block;
+}
+
+.img-container {
+  display: inline-block;
+}
+
+.img-container img {
+  height: 300px;
+}
+
+.hero-data {
+  position: fixed;
+  float: right;
+  min-width: 400px;
+  display: inline-block;
+  padding-right: 18px;
+}
+
+.hero-data h3 span {
+  font-weight: normal;
+}
+
+.loader {
+  position: absolute;
+  top: 150px;
+  right: 50%;
+}
+
