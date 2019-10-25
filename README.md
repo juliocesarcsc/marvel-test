@@ -26,6 +26,7 @@ This is a test project for the company Arnaldo Castro
 * Run `ng build` to build the project. 
 * The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 * For more information on how deploy in different platforms look here. [here](https://angular.io/guide/deployment).
+* Deployed on github [here](https://juliocesarcsc.github.io/marvel-test/).
 
 ## Running unit tests
 
